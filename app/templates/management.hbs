@@ -1,0 +1,152 @@
+{{outlet}}
+{{#paper-toolbar accent=true}}
+  {{#paper-toolbar-tools}}
+    {{#paper-button iconButton=true}}
+      {{paper-icon "menu"}}
+    {{/paper-button}}
+    
+    <span class="flex"></span>
+    {{#paper-button iconButton=true}}
+      {{paper-icon "search"}}
+    {{/paper-button}}
+    {{#paper-button iconButton=true}}
+      {{paper-icon "more_vert"}}
+    {{/paper-button}}
+  {{/paper-toolbar-tools}}
+{{/paper-toolbar}}
+
+{{!-- <div class="layout-row layout-xs-column">
+  <div class="layout-column flex-xs flex-gt-xs-50">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Create a project{{/text.headline}}
+          {{#text.subhead}}Large{{/text.subhead}}
+        {{/title.text}}
+        {{title.media size="lg" src="./" alt="Tomster" title="Tomster"}}
+      {{/card.title}}
+      {{#card.actions}}
+        {{#paper-button}}Action 1{{/paper-button}}
+        {{#paper-button}}Action 2{{/paper-button}}
+      {{/card.actions}}
+    {{/paper-card}} 
+  </div>  
+
+  <div class="layout-column flex-xs flex-gt-xs-50">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Add a user{{/text.headline}}
+          {{#text.subhead}}Large{{/text.subhead}}
+        {{/title.text}}
+        {{title.media size="lg" src="tomster-9918e85a7f1a28c78b484c34cbe88579.png" alt="Tomster" title="Tomster"}}
+      {{/card.title}}
+      {{#card.actions}}
+        {{#paper-button}}Action 1{{/paper-button}}
+        {{#paper-button}}Action 2{{/paper-button}}
+      {{/card.actions}}
+    {{/paper-card}} 
+  </div>  
+</div>
+
+<div class="layout-row layout-xs-column">
+  <div class="layout-column flex-xs flex-gt-xs-50">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Update a project{{/text.headline}}
+          {{#text.subhead}}Large{{/text.subhead}}
+        {{/title.text}}
+        {{title.media size="lg" src="tomster-9918e85a7f1a28c78b484c34cbe88579.png" alt="Tomster" title="Tomster"}}
+      {{/card.title}}
+      {{#card.actions}}
+        {{#paper-button}}Action 1{{/paper-button}}
+        {{#paper-button}}Action 2{{/paper-button}}
+      {{/card.actions}}
+    {{/paper-card}} 
+  </div>  
+
+  <div class="layout-column flex-xs flex-gt-xs-50">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Invite a user{{/text.headline}}
+          {{#text.subhead}}Large{{/text.subhead}}
+        {{/title.text}}
+        {{title.media size="lg" src="tomster-9918e85a7f1a28c78b484c34cbe88579.png" alt="Tomster" title="Tomster"}}
+      {{/card.title}}
+      {{#card.actions}}
+        {{#paper-button}}Action 1{{/paper-button}}
+        {{#paper-button}}Action 2{{/paper-button}}
+      {{/card.actions}}
+    {{/paper-card}} 
+  </div>  
+</div> --}}
+
+<div class="header-container layout-column layout-xs-row flex">
+    <div class="profile-avatar">
+        
+    </div>
+</div>
+
+<div class="layout-column layout-xs-row">
+  <div class="layout-column flex-xs flex-gt-xs-50 font-icon">
+    {{#paper-card as |card|}}
+      <div class="layout row layout-align-start-center">
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Create a project{{/text.headline}}         
+        {{/title.text}}
+      {{/card.title}}
+      {{paper-icon "assignment"}}
+      
+      </div>
+    {{/paper-card}}
+
+    {{#paper-card as |card|}}
+      <div class="layout row layout-align-start-center">
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Add a user{{/text.headline}}          
+        {{/title.text}}
+      {{/card.title}}
+      {{paper-icon "person_add"}}
+      
+      </div>     
+    {{/paper-card}}
+   </div> 
+</div> 
+
+<div class="layout-column layout-xs-row">
+  <div class="layout-column flex-xs flex-gt-xs-50 font-icon">
+    {{#paper-card as |card|}}
+      <div class="layout row layout-align-start-center">
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Update a project{{/text.headline}}         
+        {{/title.text}}
+      {{/card.title}}
+      {{paper-icon "update"}}
+      
+     </div>
+    {{/paper-card}}
+  
+    
+    {{#paper-card as |card|}}
+     <div class="layout row layout-align-start-center"> 
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Invite a user{{/text.headline}}         
+        {{/title.text}}
+      {{/card.title}}
+      {{paper-icon "group_add"}}
+      
+     </div> 
+    {{/paper-card}}
+  </div>  
+</div>
+
+   
+
+
+
