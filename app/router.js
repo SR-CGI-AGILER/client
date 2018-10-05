@@ -8,6 +8,7 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('discuss');
+  this.route('discover-project');
 });
 
 export default Router;
