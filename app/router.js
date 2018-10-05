@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('discuss');
   this.route('management');
   this.route('discover-project');
+  this.route('dashboard');
 });
 
 export default Router;
