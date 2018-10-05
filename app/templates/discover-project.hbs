@@ -1,14 +1,12 @@
 {{outlet}}
-NavBar
 <div class='search'>
-	{{paper-input class="searchBar" label="Project" placeholder="Enter project name" value=name onChange=(action (mut name))}}
+	{{paper-input label="Project" placeholder="Enter project name" value=name onChange=(action (mut name))}}
 
 	{{paper-icon "search"}}
 </div>
 
 <div class='cards'>
 	{{#paper-card as |card|}}
-      {{!-- {{card.image src="washedout-70b84b894d88b367d49d56a8cd808cca.png" alt="Washed Out" title="Washed Out"}} --}}
       <div class="layout-row layout-align-start-center">
       {{#card.title as |title|}}
         {{#title.text as |text|}}
@@ -20,8 +18,6 @@ NavBar
           {{#paper-button iconButton=true title='Public'}}{{paper-icon 'public'}}{{/paper-button}}
           {{#paper-button iconButton=true title='Subscribe'}}{{paper-icon 'add_alert'}}{{/paper-button}}
         {{/actions.icons}}
-        {{!-- {{#paper-button}}Action 1{{/paper-button}}
-        {{#paper-button}}Action 2{{/paper-button}} --}}
       {{/card.actions}}
   		</div>
       {{#card.content}}
@@ -32,7 +28,6 @@ NavBar
     {{/paper-card}}
 
     {{#paper-card as |card|}}
-      {{!-- {{card.image src="washedout-70b84b894d88b367d49d56a8cd808cca.png" alt="Washed Out" title="Washed Out"}} --}}
       <div class="layout-row layout-align-start-center">
       {{#card.title as |title|}}
         {{#title.text as |text|}}
@@ -44,8 +39,6 @@ NavBar
           {{#paper-button iconButton=true title='Private'}}{{paper-icon 'lock'}}{{/paper-button}}
           {{#paper-button iconButton=true title='Request Invite'}}{{paper-icon 'person_add'}}{{/paper-button}}
         {{/actions.icons}}
-        {{!-- {{#paper-button}}Action 1{{/paper-button}}
-        {{#paper-button}}Action 2{{/paper-button}} --}}
       {{/card.actions}}
   		</div>
       {{#card.content}}
