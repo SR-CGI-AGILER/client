@@ -1,1 +1,30 @@
 @import 'ember-paper';
+
+.font-icon {
+    md-card {
+        div {
+            md-icon{
+                
+                    width: 10%;
+                
+            }
+        }
+       
+    }
+    
+}
+.header-container{
+    height: 30vh;
+    background-color:grey;
+    // display: flex;
+    //     align-items: center;
+    .profile-avatar{
+        
+        width: 40vh;
+        background-color: chocolate;
+        margin-left: 80vh;
+        margin-right: 80vh;
+        height: 30vh;
+    }
+
+}
