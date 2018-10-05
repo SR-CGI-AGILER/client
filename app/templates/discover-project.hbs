@@ -1,0 +1,57 @@
+{{outlet}}
+NavBar
+<div class='search'>
+	{{paper-input class="searchBar" label="Project" placeholder="Enter project name" value=name onChange=(action (mut name))}}
+
+	{{paper-icon "search"}}
+</div>
+
+<div class='cards'>
+	{{#paper-card as |card|}}
+      {{!-- {{card.image src="washedout-70b84b894d88b367d49d56a8cd808cca.png" alt="Washed Out" title="Washed Out"}} --}}
+      <div class="layout-row layout-align-start-center">
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Project1{{/text.headline}}
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions  as |actions|}}
+        {{#actions.icons}}
+          {{#paper-button iconButton=true title='Public'}}{{paper-icon 'public'}}{{/paper-button}}
+          {{#paper-button iconButton=true title='Subscribe'}}{{paper-icon 'add_alert'}}{{/paper-button}}
+        {{/actions.icons}}
+        {{!-- {{#paper-button}}Action 1{{/paper-button}}
+        {{#paper-button}}Action 2{{/paper-button}} --}}
+      {{/card.actions}}
+  		</div>
+      {{#card.content}}
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi veniam neque ab, ad possimus atque rerum optio deserunt id, debitis minima accusantium voluptatum corporis dolor laborum aperiam commodi sit, ratione!
+        </p>
+      {{/card.content}}
+    {{/paper-card}}
+
+    {{#paper-card as |card|}}
+      {{!-- {{card.image src="washedout-70b84b894d88b367d49d56a8cd808cca.png" alt="Washed Out" title="Washed Out"}} --}}
+      <div class="layout-row layout-align-start-center">
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Project2{{/text.headline}}
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions  as |actions|}}
+        {{#actions.icons}}
+          {{#paper-button iconButton=true title='Private'}}{{paper-icon 'lock'}}{{/paper-button}}
+          {{#paper-button iconButton=true title='Request Invite'}}{{paper-icon 'person_add'}}{{/paper-button}}
+        {{/actions.icons}}
+        {{!-- {{#paper-button}}Action 1{{/paper-button}}
+        {{#paper-button}}Action 2{{/paper-button}} --}}
+      {{/card.actions}}
+  		</div>
+      {{#card.content}}
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi animi, nisi ipsa iusto laudantium laborum quas cupiditate facere maxime aliquid incidunt fugit impedit error cumque, saepe eligendi quibusdam, eos harum.
+        </p>
+      {{/card.content}}
+    {{/paper-card}}
+</div>    
