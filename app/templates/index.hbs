@@ -1,28 +1,28 @@
 <div class="container ">
     <center>
-    <h2>Looking for Projects?</h2>
-    
-    {{paper-input label="Discover Projects" value=search_projects onChange=(action (mut name))}}
-    <div class="layout-row layout-xs-column flex">
-        <div class="flex">
-            <div id="google_btn">
-                {{#link-to "dashboard"}}
-                {{#paper-button raised=true warn=true}}
-                    {{paper-icon "chevron_right"}}
-                        Login With Google
-                {{/paper-button}}
-                {{/link-to}}
+        <h2>Looking for Projects?</h2>
+        
+        {{paper-input label="Discover Projects" value=search_projects onChange=(action (mut name))}}
+        <div class="layout-row layout-xs-column flex">
+            <div class="flex">
+                <div id="google_btn">
+                    {{#link-to "dashboard"}}
+                    {{#paper-button raised=true warn=true}}
+                        {{paper-icon "chevron_right"}}
+                            Login With Google
+                    {{/paper-button}}
+                    {{/link-to}}
+                </div>
+            </div>
+            <div class="flex">
+                <div id="github_btn">
+                    {{#paper-button raised=true}}
+                        {{paper-icon "chevron_right"}}
+                            Login With Github
+                    {{/paper-button}}
+                </div>
             </div>
         </div>
-        <div class="flex">
-            <div id="github_btn">
-            {{#paper-button raised=true class="github_btn"}}
-                {{paper-icon "chevron_right"}}
-                Login With Github
-            {{/paper-button}}
-            </div>
-        </div>
-    </div>
     </center>    
 </div>
 {{outlet}}
