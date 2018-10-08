@@ -9,6 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('discuss');
   this.route('discover-project');
+  this.route('dashboard');
 });
 
 export default Router;
