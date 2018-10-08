@@ -1,0 +1,68 @@
+{{outlet}}
+<div class="header-container layout-column layout-xs-row flex">
+    <div class="profile-avatar">
+        
+    </div>
+</div>
+
+<div class="layout-column layout-xs-row">
+  <div class="layout-column flex-xs flex-gt-xs-50 font-icon">
+    {{#paper-card as |card|}}
+      <div class="layout row layout-align-start-center">
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Create a project{{/text.headline}}         
+        {{/title.text}}
+      {{/card.title}}
+      {{paper-icon "assignment"}}
+      
+      </div>
+    {{/paper-card}}
+
+    {{#paper-card as |card|}}
+      <div class="layout row layout-align-start-center">
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Add a user{{/text.headline}}          
+        {{/title.text}}
+      {{/card.title}}
+      {{paper-icon "person_add"}}
+      
+      </div>     
+    {{/paper-card}}
+   </div> 
+</div> 
+
+<div class="layout-column layout-xs-row">
+  <div class="layout-column flex-xs flex-gt-xs-50 font-icon">
+    {{#paper-card as |card|}}
+      <div class="layout row layout-align-start-center">
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Update a project{{/text.headline}}         
+        {{/title.text}}
+      {{/card.title}}
+      {{paper-icon "update"}}
+      
+     </div>
+    {{/paper-card}}
+  
+    
+    {{#paper-card as |card|}}
+     <div class="layout row layout-align-start-center"> 
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}Invite a user{{/text.headline}}         
+        {{/title.text}}
+      {{/card.title}}
+      {{paper-icon "group_add"}}
+      
+     </div> 
+    {{/paper-card}}
+  </div>  
+</div>
+
+   
+
+
+

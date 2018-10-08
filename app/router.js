@@ -8,8 +8,10 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('discuss');
+  this.route('management');
   this.route('discover-project');
   this.route('dashboard');
+  this.route('create-team');
 });
 
 export default Router;

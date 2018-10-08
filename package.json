@@ -54,6 +54,7 @@
     "node": "6.* || 8.* || >= 10.*"
   },
   "dependencies": {
+    "ember-paper-expansion-panel": "0.0.4",
     "passport": "^0.4.0",
     "passport-oauth": "^1.0.0"
   }
