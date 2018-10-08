@@ -1,5 +1,17 @@
 @import 'ember-paper';
 
+.container{
+    .login-container {
+        
+        border-style: solid;
+        border-radius: 20px;
+        padding: 5px;
+        width: fit-content;  
+        opacity: 0.7;
+
+    }
+}
+
 #hello{
 	margin-left:90%;
 }
@@ -55,3 +67,4 @@
         }
     }
 }
+
