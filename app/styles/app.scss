@@ -1,5 +1,23 @@
 @import 'ember-paper';
-@import "ember-side-menu";
+
+#hello{
+    // margin-left:40%;
+    display: flex;
+    justify-content: flex-start;    
+}
+
+#hello-1{
+    background: coral;
+}
+
+.hi {
+    // margin-left: 3%;
+    display: flex;
+    justify-content: flex-end;
+}
+.text-box {
+	margin-top:30%;
+}
 
 .font-icon {
     md-card {
@@ -17,8 +35,7 @@
 .header-container{
     height: 30vh;
     background-color:grey;
-    // display: flex;
-    //     align-items: center;
+
     .profile-avatar{
         
         width: 40vh;
@@ -31,4 +48,22 @@
 }
 .search{
 	text-align: center;
+}
+
+// @media(max-width: 800px) {
+
+.options-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+md-card{
+    p {
+    padding: 7px;
+    background-color: wheat;
+    border-radius: 8px;
+    width: fit-content;
+    }
 }
