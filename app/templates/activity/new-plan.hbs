@@ -1,0 +1,78 @@
+{{outlet}}
+
+<h3 class="leftmargin">New Plan</h3>
+{{#paper-card}}
+
+        {{#paper-list}}
+            <div class="leftmargin">
+                        
+                <p>{{paper-input
+                        icon="description"
+                    label="Project Name"
+                    value=maxLength
+                    onChange=(action (mut maxLength))
+                    required=true
+                    maxlength=10
+                    errorMessages=(hash
+                    maxlength="Maximum length exceeded."
+                    )
+                    }}
+                    {{paper-input label="Add Member" value=name onChange=(action (mut name)) icon="person_add"}}
+
+
+                    <div class="layout layout-sm-column">
+                    {{paper-input class="flex" label="Submission date" type="date" value=date onChange=(action (mut date))}}
+                    {{paper-input class="flex" label="" type="text" value="" disabled=true onChange=(action (mut foo)) icon="calendar_today"}}
+                    </div>
+                            
+                        
+                        
+                </p> 
+                    
+            </div>
+        {{/paper-list}}
+            {{paper-divider}}
+
+
+
+
+
+        {{#paper-list}}
+            <div class="leftmargin">
+                <h5>Tasks</h5>
+                <div class="layout-column">
+                {{#paper-checkbox value=value1 onChange=(action (mut value1))}}
+                    A checkbox: {{value1}}
+                {{/paper-checkbox}}
+
+                {{#paper-checkbox value=value2 onChange=(action (mut value2))}}
+                    A checkbox: {{if value2 "yep" "nope"}}
+                {{/paper-checkbox}}
+                {{#paper-checkbox value=value3 onChange=(action (mut value3))}}
+                    A checkbox: {{if value2 "yep" "nope"}}
+                {{/paper-checkbox}}
+                {{#paper-checkbox value=value3 onChange=(action (mut value3))}}
+                    A checkbox: {{if value2 "yep" "nope"}}
+                {{/paper-checkbox}}
+
+                
+                
+                </div>
+            </div>
+        {{/paper-list}} 
+
+
+        {{paper-divider}}
+
+
+        {{#paper-list}}
+            <div class="leftmargin">
+            <div>
+                    <span class="flex"></span>
+
+                    {{paper-input label="Add Task" type="text" value=name2 block=true onChange=(action (mut name2)) iconRight="send" icon="add"}}
+
+                </div>
+            </div>
+        {{/paper-list}}
+{{/paper-card}}
