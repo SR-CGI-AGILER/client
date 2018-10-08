@@ -13,10 +13,19 @@
 }
 
 #hello{
-	margin-left:90%;
+    // margin-left:40%;
+    display: flex;
+    justify-content: flex-start;    
 }
+
+#hello-1{
+    background: coral;
+}
+
 .hi {
-	margin-left: 2%;
+    // margin-left: 3%;
+    display: flex;
+    justify-content: flex-end;
 }
 .text-box {
 	margin-top:30%;
@@ -38,8 +47,7 @@
 .header-container{
     height: 30vh;
     background-color:grey;
-    // display: flex;
-    //     align-items: center;
+
     .profile-avatar{
         
         width: 40vh;
@@ -50,11 +58,45 @@
     }
 
 }
-
 .search{
 	text-align: center;
 }
+.searchbar{
+    border: 1px solid #919193;
+    border-width: 1px;
+    border-style: groove;
+}
+#members{
+    text-align: right;
+}
 
+.container{
+    width: 100%;
+    text-align: center;
+}
+.md-list-item-text{
+    .nav-route{
+        text-decoration: none;
+    }
+}
+
+// @media(max-width: 800px) {
+
+.options-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+md-card{
+    p {
+    padding: 7px;
+    background-color: wheat;
+    border-radius: 8px;
+    width: fit-content;
+    }
+}
 
 .login-create-team-card-container{
     md-card {
