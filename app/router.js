@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('management');
   this.route('discover-project');
   this.route('dashboard');
+  this.route('start-discussion', function() {});
 });
 
 export default Router;
