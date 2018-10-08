@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('discover-project');
   this.route('dashboard');
   this.route('create-team');
+  this.route('integration');
 });
 
 export default Router;
