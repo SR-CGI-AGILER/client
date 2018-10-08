@@ -8,10 +8,30 @@
 	{{#paper-toolbar as |toolbar|}}
 		{{#paper-toolbar-tools}}Agile Hero{{/paper-toolbar-tools}}
 	{{/paper-toolbar}}
-		{{#link-to "dashboard"}}{{#paper-content}}Dashboard{{/paper-content}}{{/link-to}}
-		{{#link-to "management"}}{{#paper-content}}User Management{{/paper-content}}{{/link-to}}
-		{{#link-to "discuss"}}{{#paper-content}}Discuss{{/paper-content}}{{/link-to}}
-		{{#link-to "discover-project"}}{{#paper-content}}Discover Projects{{/paper-content}}{{/link-to}}
+
+{{#paper-list}}
+	{{#link-to  "start-discussion"}}{{#paper-item class="md-2-line"}}
+      <div class="md-list-item-text nav-route">
+        <h3 >Discussion</h3>
+      </div>
+  {{/paper-item}}{{/link-to}}
+	{{paper-divider}}
+	{{#link-to  "discover-project"}} {{#paper-item class="md-2-line"}}
+      <div class="md-list-item-text" >
+        <h3 class="nav-route">Discover Projects</h3>
+      </div>
+  {{/paper-item}}{{/link-to}}
+	{{paper-divider}}
+	{{#link-to "index"}}
+	{{#paper-item class="md-2-line"}}
+      <div class="md-list-item-text">
+        <h3>Logout</h3>
+      </div>
+  {{/paper-item}}
+	{{/link-to}}
+	{{paper-divider}}
+{{/paper-list}}	
+		
 	{{/paper-sidenav}}
 	
 
@@ -19,7 +39,7 @@
 	  {{#paper-toolbar-tools}}
 		    
 				{{#paper-sidenav-toggle name="left" as |toggleAction|}}
-					{{#paper-button classNames="hide-xl" onClick=(action toggleAction)}}
+					{{#paper-button classNames="hide-xl" onClick=(action toggleAction) iconButton=true}}
 						{{paper-icon "menu"}}
 					{{/paper-button}}
 				{{/paper-sidenav-toggle}}

@@ -1,12 +1,25 @@
 <div class="container ">
     <center>
-        <h2>Looking for Projects?</h2>
         
-        {{paper-input label="Discover Projects" value=search_projects onChange=(action (mut name))}}
+        <h2>Looking for Projects?</h2>
+        {{paper-input label="Discover Projects" value=name onChange=(action (mut name))}}
+        
+        <div class="login-container">
+            <h2>LOGIN</h2>
+       
+            <div class="layout-column layout-align-space-around-center">
+                {{paper-input label="Username" id="username" value=username onChange=(action (mut username))}}
+                {{paper-input label="Password" type="password" value=password onChange=(action (mut password))}}
+            </div>
+            {{paper-divider}}
+             {{#paper-button raised=true warn=true onClick=(action "login")}}LOGIN{{/paper-button}}
+        </div>
+       
+        {{paper-divider}}
         <div class="layout-row layout-xs-column flex">
             <div class="flex">
                 <div id="google_btn">
-                    {{#link-to "dashboard"}}
+                    {{#link-to "create-team"}}
                     {{#paper-button raised=true warn=true}}
                         {{paper-icon "chevron_right"}}
                             Login With Google
@@ -16,10 +29,12 @@
             </div>
             <div class="flex">
                 <div id="github_btn">
+                    {{#link-to "create-team"}}
                     {{#paper-button raised=true}}
                         {{paper-icon "chevron_right"}}
                             Login With Github
                     {{/paper-button}}
+                    {{/link-to}}
                 </div>
             </div>
         </div>

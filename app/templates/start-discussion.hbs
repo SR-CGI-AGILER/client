@@ -1,0 +1,55 @@
+
+
+<div class="container">
+	{{paper-input id="searchbar" label="Find or Start a Topic" value=name onChange=(action (mut name))}}
+    {{#link-to "discuss"}}{{#paper-button raised=true}}Submit{{/paper-button}}{{/link-to}}
+
+</div>
+
+{{#paper-list}}
+  {{#paper-subheader}}Existing Discussions{{/paper-subheader}}
+    {{#paper-item class="md-2-line" onClick=(action "goToDiscussion" topic)}}
+      <div class="md-list-item-text layout-row">
+        <div>  
+        <h3>Topic Name</h3>
+        <p>Desc</p>
+        <h4>4 hrs ago</h4>
+        </div>
+        {{!-- <div id="members">
+        {{#paper-button raised=true mini=true}}A{{/paper-button}}
+        {{#paper-button raised=true mini=true}}B{{/paper-button}}
+        {{#paper-button raised=true mini=true}}C{{/paper-button}}
+        
+        </div> --}}
+      </div>
+    {{/paper-item}}
+    {{paper-divider}}
+    {{#paper-item class="md-2-line" onClick=(action "goToDiscussion" topic)}}
+    <div class="md-list-item-text layout-row">
+        <div>
+        <h3>Topic Name</h3>
+        <p>Desc</p>
+        <h4>21 hrs ago</h4>
+        </div>
+        {{!-- {{#paper-button raised=true mini=true}}A{{/paper-button}}
+        {{#paper-button raised=true mini=true}}B{{/paper-button}}
+        {{#paper-button raised=true mini=true}}C{{/paper-button}} --}}
+      </div>
+    {{/paper-item}}
+    {{paper-divider}}
+    {{#paper-item class="md-2-line" onClick=(action "goToDiscussion" topic)}}
+    <div class="md-list-item-text layout-row">
+        <div>
+        <h3>Topic Name</h3>
+        <p>Desc</p>
+        <h4>1 hr ago</h4>
+        </div>
+        {{!-- {{#paper-button raised=true mini=true}}A{{/paper-button}}
+        {{#paper-button raised=true mini=true}}B{{/paper-button}}
+        {{#paper-button raised=true mini=true}}C{{/paper-button}} --}}
+      </div>
+    {{/paper-item}}
+    {{paper-divider}}
+{{/paper-list}} 
+
+{{outlet}}
