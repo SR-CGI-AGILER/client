@@ -7,7 +7,7 @@ export default Controller.extend({
             let user = this.getProperties('username');
             localStorage.setItem("username","Ruchik");
             if(user.username === localStorage.getItem("username")){
-                this.transitionToRoute('discover-project');
+                this.transitionToRoute('activity');
             }
             else{
                 this.transitionToRoute('create-team');
