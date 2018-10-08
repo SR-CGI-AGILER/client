@@ -19,7 +19,7 @@
 	  {{#paper-toolbar-tools}}
 		    
 				{{#paper-sidenav-toggle name="left" as |toggleAction|}}
-					{{#paper-button classNames="hide-xl" onClick=(action toggleAction)}}
+					{{#paper-button classNames="hide-xl" onClick=(action toggleAction) iconButton=true}}
 						{{paper-icon "menu"}}
 					{{/paper-button}}
 				{{/paper-sidenav-toggle}}

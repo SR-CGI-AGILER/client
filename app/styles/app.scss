@@ -67,3 +67,15 @@ md-card{
     width: fit-content;
     }
 }
+
+.login-create-team-card-container{
+    md-card {
+        height: 100px;
+        width: 210px;
+        md-card-content {
+            
+            overflow-y: scroll;
+            overflow-wrap: break-word;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<div class="container ">
+        
+        <div class="layout-column layout-align-space-around-center flex">
+            <h2>Create a Team</h2>
+            {{paper-input label="Team Name" value=team_name onChange=(action (mut team_name))}}
+            {{paper-input value=purpose placeholder="Purpose" onChange=(action (mut purpose)) }}
+            <div class="login-create-team-card-container">
+                {{#paper-card as |card|  }}
+                {{!-- {{#card.title as |title|}}
+                {{#title.text as |text|}}
+                    {{#text.subhead}}
+                        {{purpose}}
+                    {{/text.subhead}}
+                {{/title.text}}        
+                {{/card.title}} --}}
+                {{#card.content}}
+                    {{purpose}}
+                {{/card.content}}
+            {{/paper-card}}    
+            </div>
+            
+        </div>
+        <div class="layout-row layout-align-center flex">
+             {{paper-input label="Invite Members" value=invite_members placeholder="someone@example.com" onChange=(action (mut invite_members))}}
+        </div>
+
+        <div class="layout-row layout-align-center flex">
+            {{#link-to "index"}}
+                {{#paper-button raised=true}}
+                    CANCEL
+                {{/paper-button}}
+            {{/link-to}}
+            {{#link-to "integration"}}
+                {{#paper-button warn=true raised=true}}CREATE TEAM{{/paper-button}}
+            {{/link-to}}
+        </div>
+        
+</div>
+{{outlet}}
