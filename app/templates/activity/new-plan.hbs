@@ -1,6 +1,6 @@
 {{outlet}}
 
-<h3 class="leftmargin">New Plan</h3>
+{{!-- <h3 class="leftmargin">New Plan</h3> --}}
 {{#paper-card}}
 
         {{#paper-list}}
@@ -21,8 +21,8 @@
 
 
                     <div class="layout layout-sm-column">
-                    {{paper-input class="flex" label="Submission date" type="date" value=date onChange=(action (mut date))}}
-                    {{paper-input class="flex" label="" type="text" value="" disabled=true onChange=(action (mut foo)) icon="calendar_today"}}
+                        {{paper-input class="flex" label="Submission date" type="date" value=date onChange=(action (mut date))}}
+                        {{paper-input class="flex" label="" type="text" value="" disabled=true onChange=(action (mut foo)) icon="calendar_today"}}
                     </div>
                             
                         

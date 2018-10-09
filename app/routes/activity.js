@@ -5,5 +5,8 @@ export default Route.extend({
         noop() {
 
         }
-}
+    },
+    beforeModel(){
+        this.replaceWith('activity.myactivity');
+    }
 });

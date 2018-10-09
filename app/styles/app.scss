@@ -1,6 +1,7 @@
 @import 'ember-paper';
 @import 'onboarding';
 @import 'activity';
+@import 'start-discussion';
 
 
 
@@ -15,27 +16,10 @@
     }
 }
 
-#hello{
-   
-    display: flex;
-    justify-content: flex-start;    
-}
-.hi {
-    
+.time-head {
     display: flex;
     justify-content: flex-end;
-}
-.hi-1{
-    background-color: wheat;
-}
-
-.text-box {
-	margin-top:30%;
-}
-#hello-1{
-    background: coral;
-}
-
+} 
 
 .font-icon {
     md-card {
@@ -67,23 +51,10 @@
 .search{
 	text-align: center;
 }
-.searchbar{
-    border: 1px solid #919193;
-    border-width: 1px;
-    border-style: groove;
-}
-#members{
-    text-align: right;
-}
 
 .container{
     width: 100%;
     text-align: center;
-}
-.md-list-item-text{
-    .nav-route{
-        text-decoration: none;
-    }
 }
 
 // @media(max-width: 800px) {
