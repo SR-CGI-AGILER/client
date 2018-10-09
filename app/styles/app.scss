@@ -1,5 +1,8 @@
 @import 'ember-paper';
 
+.leftmargin{
+    margin-left: 2%;
+}
 .container{
     .login-container {
         
@@ -13,26 +16,26 @@
 }
 
 #hello{
-    // margin-left:40%;
+   
     display: flex;
     justify-content: flex-start;    
 }
+.hi {
+    
+    display: flex;
+    justify-content: flex-end;
+}
+.hi-1{
+    background-color: wheat;
+}
 
+.text-box {
+	margin-top:30%;
+}
 #hello-1{
     background: coral;
 }
 
-.hi {
-    // margin-left: 3%;
-    display: flex;
-    justify-content: flex-end;
-}
-.text-box {
-	margin-top:30%;
-}
-.leftmargin{
-    margin-left: 2%;
-}
 
 .font-icon {
     md-card {
@@ -99,7 +102,7 @@
 md-card{
     p {
     padding: 7px;
-    background-color: wheat;
+    // background-color: wheat;
     border-radius: 8px;
     width: fit-content;
     }
