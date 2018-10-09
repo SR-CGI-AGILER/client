@@ -19,7 +19,11 @@ Router.map(function() {
   });
   this.route('start-discussion');
   this.route('tasks-list')
-  this.route('create-team');
+  this.route('create-team', function() {
+    this.route('invite-members');
+    this.route('integrations');
+    this.route('team-name');
+  });
   this.route('integration');
 });
 

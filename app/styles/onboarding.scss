@@ -1,12 +1,27 @@
 .container{
-    .login-container {
+    .login-container  {
         
         border-style: solid;
         border-radius: 20px;
         padding: 5px;
         width: fit-content;  
         opacity: 0.7;
-
+    }
+    .login-container .container-projects{
+        h2{
+            @media (min-width:320px) {
+                font-size: 0.75rem; 
+            }
+            @media (min-width:640px) {
+                font-size: 1rem;
+            }
+            @media (min-width:720px){
+                font-size: 1.25rem;
+            }
+            @media (min-width:960px){
+                font-size: 1.5rem;
+            }
+        } 
     }
 }
 
@@ -21,3 +36,43 @@
         }
     }
 }
+
+
+    .container-create-team{
+        h2{
+        @media (min-width:320px) {
+            font-size: 0.75rem; 
+        }
+        @media (min-width:640px) {
+            font-size: 1rem;
+        }
+        @media (min-width:720px){
+            font-size: 1.25rem;
+        }
+        @media (min-width:960px){
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// @media (min-width:640px) {
+//     .container-create-team{
+//         h2{
+//             font-size: 1rem; 
+//         }
+//     }
+// }
+// @media (min-width:720px){
+//     .container-create-team{
+//         h2{
+//             font-size: 1.25rem; 
+//         }
+// }
+// }
+// @media (min-width:960px){
+//     .container-create-team{
+//         h2{
+//             font-size: 1.5rem; 
+//         }
+// }
+// }
