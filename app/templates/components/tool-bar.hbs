@@ -9,8 +9,10 @@
 		{{#paper-toolbar-tools}}Agiler Hero{{/paper-toolbar-tools}}
 	{{/paper-toolbar}}
 
+<div class="sidenav-container">
 {{#paper-list}}
-	{{#link-to  "start-discussion"}}{{#paper-item class="md-2-line"}}
+	{{#link-to  "start-discussion"}}
+	{{#paper-item class="md-2-line"}}
       <div class="md-list-item-text nav-route">
         <h3 >Discussion</h3>
       </div>
@@ -22,6 +24,24 @@
       </div>
   {{/paper-item}}{{/link-to}}
 	{{paper-divider}}
+	{{#link-to  "integration"}} {{#paper-item class="md-2-line"}}
+      <div class="md-list-item-text" >
+        <h3 class="nav-route">Add Apps</h3>
+      </div>
+  {{/paper-item}}{{/link-to}}
+	{{paper-divider}}
+	{{#paper-item class="md-2-line"}}
+      <div class="md-list-item-text" >
+        <h3 class="nav-route">Project Profile</h3>
+      </div>
+  {{/paper-item}}
+	{{paper-divider}}
+	{{#paper-item class="md-2-line"}}
+      <div class="md-list-item-text" >
+        <h3 class="nav-route">User Profile</h3>
+      </div>
+  {{/paper-item}}
+	{{paper-divider}}
 	{{#link-to "index"}}
 	{{#paper-item class="md-2-line"}}
       <div class="md-list-item-text">
@@ -31,7 +51,7 @@
 	{{/link-to}}
 	{{paper-divider}}
 {{/paper-list}}	
-		
+</div>		
 	{{/paper-sidenav}}
 	
 
@@ -44,7 +64,7 @@
 					{{/paper-button}}
 				{{/paper-sidenav-toggle}}
 		    <h2>
-		      Agiler Hero
+		      {{#link-to "activity.myactivity"}}Agiler Hero{{/link-to}}
 		    </h2>
 		    <span class="flex"></span>
 		    {{#paper-button iconButton=true}}
