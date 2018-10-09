@@ -11,11 +11,9 @@
                 {{paper-input label="Username" id="username" value=username onChange=(action (mut username))}}
                 {{paper-input label="Password" type="password" value=password onChange=(action (mut password))}}
             </div>
-            {{paper-divider}}
              {{#paper-button raised=true warn=true onClick=(action "login")}}LOGIN{{/paper-button}}
         </div>
        
-        {{paper-divider}}
         <div class="layout-row layout-xs-column flex">
             <div class="flex">
                 <div id="google_btn">

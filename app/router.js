@@ -11,12 +11,12 @@ Router.map(function() {
   this.route('management');
   this.route('discover-project');
   this.route('dashboard');
+  this.route('start-discussion');
   this.route('activity', function() {
-  this.route('myactivity');
-  this.route('feeds');
-  this.route('new-plan');
+    this.route('myactivity');
+    this.route('feeds');
+    this.route('new-plan');
   });
-
   this.route('start-discussion');
   this.route('tasks-list')
   this.route('create-team');
