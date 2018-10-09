@@ -1,4 +1,8 @@
 @import 'ember-paper';
+@import 'onboarding';
+@import 'activity';
+
+
 
 .container{
     .login-container {
@@ -8,31 +12,30 @@
         padding: 5px;
         width: fit-content;  
         opacity: 0.7;
-
     }
 }
 
 #hello{
-    // margin-left:40%;
+   
     display: flex;
     justify-content: flex-start;    
 }
+.hi {
+    
+    display: flex;
+    justify-content: flex-end;
+}
+.hi-1{
+    background-color: wheat;
+}
 
+.text-box {
+	margin-top:30%;
+}
 #hello-1{
     background: coral;
 }
 
-.hi {
-    // margin-left: 3%;
-    display: flex;
-    justify-content: flex-end;
-}
-.text-box {
-	margin-top:30%;
-}
-.leftmargin{
-    margin-left: 2%;
-}
 
 .font-icon {
     md-card {
@@ -99,21 +102,9 @@
 md-card{
     p {
     padding: 7px;
-    background-color: wheat;
+    // background-color: wheat;
     border-radius: 8px;
     width: fit-content;
-    }
-}
-
-.login-create-team-card-container{
-    md-card {
-        height: 100px;
-        width: 210px;
-        md-card-content {
-            
-            overflow-y: scroll;
-            overflow-wrap: break-word;
-        }
     }
 }
 
