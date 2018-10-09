@@ -1,0 +1,23 @@
+.container{
+    .login-container {
+        
+        border-style: solid;
+        border-radius: 20px;
+        padding: 5px;
+        width: fit-content;  
+        opacity: 0.7;
+
+    }
+}
+
+.login-create-team-card-container{
+    md-card {
+        height: 100px;
+        width: 210px;
+        md-card-content {
+            
+            overflow-y: scroll;
+            overflow-wrap: break-word;
+        }
+    }
+}
