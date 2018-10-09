@@ -1,50 +1,53 @@
 {{outlet}}
-<h3 class=leftmargin>My Activity</h3>
+{{!-- <h3 class=leftmargin>My Activity</h3> --}}
 {{!-- card for project movie-app --}}
-{{#paper-card as |card|}}
-
+{{!-- {{#paper-card as |card|}} --}}
+<span class="span-items">
   {{#paper-subheader}}
 
-    <span class="span-items">
+    
         Project 1 : Movie-app
         Due in : 3 day
-    </span>
+  
     
-      
-    {{#paper-menu as |menu|}}
-      {{#menu.trigger}}
-        {{#paper-button iconButton=true}}
-          {{paper-icon "more_vert"}}
-        {{/paper-button}}
-      {{/menu.trigger}}
-      {{#menu.content width=4 as |content|}}
-        {{#each items as |item|}}
-          {{#content.menu-item onClick="openSomething"}}
-            {{paper-icon item.icon}}
-            <span>{{item.title}}</span>
+    <span class="span-icons">
+       {{#paper-button iconButton=true}}
+          {{paper-icon "public"}}
+       {{/paper-button}}
+      {{#paper-menu as |menu|}}
+        {{#menu.trigger}}
+          {{#paper-button iconButton=true}}
+            {{paper-icon "more_vert"}}
+          {{/paper-button}}
+        {{/menu.trigger}}
+        {{#menu.content width=4 as |content|}}
+          {{#each items as |item|}}
+            {{#content.menu-item onClick="openSomething"}}
+              {{paper-icon item.icon}}
+              <span>{{item.title}}</span>
+            {{/content.menu-item}}
+          {{/each}}
+          {{#content.menu-item onClick="openSomething" }}
+            {{paper-icon "message"}}
+            <span>Open Discussion .</span>
           {{/content.menu-item}}
-        {{/each}}
-        {{#content.menu-item onClick="openSomething" }}
-          {{paper-icon "message"}}
-          <span>Open Discussion .</span>
-        {{/content.menu-item}}
-        {{#content.menu-item onClick="openSomething" }}
-          {{paper-icon "delete"}}
-          <span>Delete Task</span>
-        {{/content.menu-item}}
-
-        {{paper-divider}}
-
-        {{#each items as |item|}}
-          {{#content.menu-item onClick="openSomething"}}
-            {{paper-icon item.icon}} {{item.title}}
+          {{#content.menu-item onClick="openSomething" }}
+            {{paper-icon "delete"}}
+            <span>Delete Task</span>
           {{/content.menu-item}}
-        {{/each}}
-      {{/menu.content}}
-    {{/paper-menu}}
-              
+
+          {{paper-divider}}
+
+          {{#each items as |item|}}
+            {{#content.menu-item onClick="openSomething"}}
+              {{paper-icon item.icon}} {{item.title}}
+            {{/content.menu-item}}
+          {{/each}}
+        {{/menu.content}}
+      {{/paper-menu}}
+    </span>        
   {{/paper-subheader}}
-      
+  </span>     
         
   {{#paper-item}}
     {{#paper-checkbox value=value1 onChange=(action (mut value1))}}
@@ -128,19 +131,21 @@
       {{/paper-menu}}
     </div>
   {{/paper-item}}
-{{/paper-card}}
+{{!-- {{/paper-card}} --}}
 
 
 {{!-- second card for project 2 --}}
 
-{{#paper-card as |card|}}
+{{!-- {{#paper-card as |card|}} --}}
   {{#paper-subheader}}
     <span class="span-items">
       Project 2 : Super-app  
       Due in : 1 day
     </span>
     
-      
+    {{#paper-button iconButton=true}}
+     {{paper-icon "lock"}}
+    {{/paper-button}}  
     {{#paper-menu as |menu|}}
       {{#menu.trigger}}
         {{#paper-button iconButton=true}}
@@ -260,4 +265,4 @@
   {{/paper-item}}
 
 
-{{/paper-card}}
+{{!-- {{/paper-card}} --}}

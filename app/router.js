@@ -16,6 +16,7 @@ Router.map(function() {
     this.route('myactivity');
     this.route('feeds');
     this.route('new-plan');
+    this.route('planner');
   });
   this.route('start-discussion');
   this.route('tasks-list')
