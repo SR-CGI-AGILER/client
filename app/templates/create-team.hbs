@@ -1,22 +1,8 @@
-<div class="container ">
-        
+<div class="container container-create-team ">
         <div class="layout-column layout-align-space-around-center flex">
-            <h2>Create a Team</h2>
-            {{paper-input label="Team Name" value=team_name onChange=(action (mut team_name))}}
-            
-            
-        </div>
-        {{outlet}}
-
-        <div class="layout-row layout-align-center flex">
-            {{#link-to "index"}}
-                {{#paper-button raised=true}}
-                    CANCEL
-                {{/paper-button}}
-            {{/link-to}}
-            {{#link-to "create-team.invite-members"}}
-                {{#paper-button warn=true raised=true}}CREATE TEAM{{/paper-button}}
-            {{/link-to}}
-        </div>
-        
+            <h2>Create Team</h2>
+        </div>    
+        {{!-- <div class="layout-row layout-align-center-end">
+            {{paper-icon "keyboard_backspace"}}
+        </div> --}}
 </div>

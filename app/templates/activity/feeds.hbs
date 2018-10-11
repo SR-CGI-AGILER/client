@@ -1,134 +1,87 @@
 {{outlet}}
-<h3 class=leftmargin>News Feeds</h3>
+{{!-- <h3 class=leftmargin>News Feeds</h3> --}}
 <h5 class=leftmargin>Today</h5>
-{{#paper-card as |card|}}
-{{!-- {{#paper-card as |card|}}
-      {{#card.content}}
-        <span>
-           <strong>Swarnim</strong> created a project named <strong>Movie-app</strong>
-        </span>
-        {{/card.content}}
-        {{#card.actions}}
-       <time>5 mins ago</time>
-      {{/card.actions}}
-    {{/paper-card}}
-    {{#paper-card as |card|}}
-      {{#card.content}}
-        <span>
-           <strong>Atreya</strong> subscribed to a project called <strong>toDoList</strong>
-        </span>
-        {{/card.content}}
-        {{#card.actions}}
-       <time>1h ago</time>
-      {{/card.actions}}
-    {{/paper-card}}
-    {{#paper-card as |card|}}
-      {{#card.content}}
-        <span>
-           <strong>Ankit </strong>completed a task named <strong>create routes</strong>
-        </span>
-        {{/card.content}}
-        {{#card.actions}}
-       <time>2h ago</time>
-      {{/card.actions}}--}}
-      {{#paper-list}}
+{{!-- {{#paper-card as |card|}} --}}
+    {{#paper-list}}
+    
+        {{#paper-item class="md-3-line"}}
+            <img src="https://previews.123rf.com/images/pandavector/pandavector1704/pandavector170406105/76736967-boy-icon-plat-un-seul-avatar-ic%C3%B4ne-de-peaople-%C3%A0-partir-du-grand-avatar-.jpg" alt="no image" class="md-avatar">
+            <div class="md-list-item-text">
+                <span>
+                <strong>Swarnim</strong> created a project named <strong>Movie-app</strong>
+                </span>
+                <p>5 mins ago</p>
+            </div>
+        {{paper-divider}}
+        
+        {{/paper-item}}
+
+    {{/paper-list}}
+    {{#paper-list}}
+    
+        {{#paper-item class="md-3-line"}}
+        <img src="https://previews.123rf.com/images/pandavector/pandavector1704/pandavector170406100/76736962-bald-head-icon-flat-single-avatar-peaople-icon-from-the-big-avatar-flat-.jpg" alt="no image" class="md-avatar">
+            <div class="md-list-item-text">
+                <span>
+                <strong>Atreya</strong> subscribed to a project called <strong>toDoList</strong>
+                </span>
+                <p>1h ago</p>
+            </div>
+        {{paper-divider}}
+        
+        {{/paper-item}}
+
+    {{/paper-list}}
+    {{#paper-list}}
  
-    {{#paper-item class="md-3-line"}}
-      <div class="md-list-item-text">
-        <span>
-           <strong>Swarnim</strong> created a project named <strong>Movie-app</strong>
-        </span>
-        <p>5 mins ago</p>
-      </div>
-      {{paper-divider}}
-     
-    {{/paper-item}}
+        {{#paper-item class="md-3-line"}}
+            <img src="https://previews.123rf.com/images/pandavector/pandavector1704/pandavector170406110/76645977-bald-man-icon-flat-single-avatar-icon-.jpg" alt="no image" class="md-avatar">
+            <div class="md-list-item-text">
+                <span><strong>Ankit </strong>completed a task named <strong>create routes</strong>
+                </span>
+                <p>2h ago</p>
+            </div>
+    
+        
+        {{/paper-item}}
 
-{{/paper-list}}
- {{#paper-list}}
- 
-    {{#paper-item class="md-3-line"}}
-      <div class="md-list-item-text">
-        <span>
-           <strong>Atreya</strong> subscribed to a project called <strong>toDoList</strong>
-        </span>
-        <p>1h ago</p>
-      </div>
-      {{paper-divider}}
-      
-    {{/paper-item}}
+    {{/paper-list}}
 
-{{/paper-list}}
- {{#paper-list}}
- 
-    {{#paper-item class="md-3-line"}}
-      <div class="md-list-item-text">
-        <span>
-           <strong>Ankit </strong>completed a task named <strong>create routes</strong>
-        </span>
-        <p>2h ago</p>
-      </div>
-   
-     
-    {{/paper-item}}
-
-{{/paper-list}}
-
-    {{/paper-card}}
- {{paper-divider}} 
+{{!-- {{/paper-card}} --}}
+{{paper-divider}} 
 
 
 <h5 class=leftmargin>Yesterday</h5> 
-{{#paper-card as |card|}}
-{{#paper-list}}
- 
-    {{#paper-item class="md-3-line"}}
-      <div class="md-list-item-text">
-        <span>
-           <strong>Aniruddha</strong> added a task <strong>user interface</strong> to <strong>super-app</strong>
-        </span>
-        <p>10:00am</p>
-      </div>
-      {{paper-divider}}
-     
-    {{/paper-item}}
+{{!-- {{#paper-card as |card|}} --}}
+    {{#paper-list}}
+        
+        {{#paper-item class="md-3-line"}}
+            <img src="https://previews.123rf.com/images/pandavector/pandavector1704/pandavector170406110/76645977-bald-man-icon-flat-single-avatar-icon-.jpg" alt="no image" class="md-avatar">
+            <div class="md-list-item-text">
+                <span>
+                <strong>Anirudha</strong> added a task <strong>user interface</strong> to <strong>super-app</strong>
+                </span>
+                <p>10:00am</p>
+            </div>
+            {{paper-divider}}
+        
+        {{/paper-item}}
 
-{{/paper-list}}
+    {{/paper-list}}
 
-{{#paper-list}}
- 
-    {{#paper-item class="md-3-line"}}
-      <div class="md-list-item-text">
-       <span>
-           <strong>Swarnim</strong> created a project named <strong>Super-app</strong>
-        </span>
-        <p>9:30am</p>
-      </div>
-      {{!-- {{paper-divider}} --}}
-     
-    {{/paper-item}}
+    {{#paper-list}}
+        
+        {{#paper-item class="md-3-line"}}
+            <img src="https://previews.123rf.com/images/pandavector/pandavector1704/pandavector170406105/76736967-boy-icon-plat-un-seul-avatar-ic%C3%B4ne-de-peaople-%C3%A0-partir-du-grand-avatar-.jpg" alt="no image" class="md-avatar">
+            <div class="md-list-item-text">
+            <span>
+                <strong>Swarnim</strong> created a project named <strong>Super-app</strong>
+                </span>
+                <p>9:30am</p>
+            </div>
+            
+            
+        {{/paper-item}}
 
-{{/paper-list}}
-{{/paper-card}}
-{{!-- {{#paper-card as |card|}}
-      {{#card.content}}
-        <span>
-           <strong>Aniruddha</strong> added a task <strong>user interface</strong> to <strong>super-app</strong>
-        </span>
-        {{/card.content}}
-        {{#card.actions}}
-       <time>10:00am</time>
-      {{/card.actions}}
-    {{/paper-card}} --}}
-{{!-- 
-{{#paper-card as |card|}} --}}
-      {{!-- {{#card.content}}
-        <span>
-           <strong>Swarnim</strong> created a project named <strong>Super-app</strong>
-        </span>
-        {{/card.content}}
-        {{#card.actions}}
-       <time>9:30am</time>
-      {{/card.actions}}
-    {{/paper-card}} --}} 
-
+    {{/paper-list}}
+{{!-- {{/paper-card}} --}}

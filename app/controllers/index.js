@@ -10,7 +10,7 @@ export default Controller.extend({
                 this.transitionToRoute('activity.myactivity');
             }
             else{
-                this.transitionToRoute('multiform.create-team');
+                this.transitionToRoute('create-team.team-name');
             }
         }
     }

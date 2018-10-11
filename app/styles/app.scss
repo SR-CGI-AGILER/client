@@ -1,30 +1,25 @@
 @import 'ember-paper';
 @import 'onboarding';
+@import 'activity';
+@import 'start-discussion';
 
 
 
-
-#hello{
-    // margin-left:40%;
-    display: flex;
-    justify-content: flex-start;    
+.container{
+    .login-container {
+        
+        border-style: solid;
+        border-radius: 20px;
+        padding: 5px;
+        width: fit-content;  
+        opacity: 0.7;
+    }
 }
 
-#hello-1{
-    background: coral;
-}
-
-.hi {
-    // margin-left: 3%;
+.time-head {
     display: flex;
     justify-content: flex-end;
-}
-.text-box {
-	margin-top:30%;
-}
-.leftmargin{
-    margin-left: 2%;
-}
+} 
 
 .font-icon {
     md-card {
@@ -56,23 +51,10 @@
 .search{
 	text-align: center;
 }
-.searchbar{
-    border: 1px solid #919193;
-    border-width: 1px;
-    border-style: groove;
-}
-#members{
-    text-align: right;
-}
 
 .container{
     width: 100%;
     text-align: center;
-}
-.md-list-item-text{
-    .nav-route{
-        text-decoration: none;
-    }
 }
 
 // @media(max-width: 800px) {
@@ -91,9 +73,10 @@
 md-card{
     p {
     padding: 7px;
-    background-color: wheat;
+    // background-color: wheat;
     border-radius: 8px;
     width: fit-content;
     }
 }
+
 
