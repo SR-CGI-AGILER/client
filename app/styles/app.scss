@@ -16,27 +16,10 @@
     }
 }
 
-#hello{
-   
-    display: flex;
-    justify-content: flex-start;    
-}
-.hi {
-    
+.time-head {
     display: flex;
     justify-content: flex-end;
-}
-.hi-1{
-    background-color: wheat;
-}
-
-.text-box {
-	margin-top:30%;
-}
-#hello-1{
-    background: coral;
-}
-
+} 
 
 .font-icon {
     md-card {
@@ -95,4 +78,5 @@ md-card{
     width: fit-content;
     }
 }
+
 
