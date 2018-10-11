@@ -7,12 +7,15 @@ export default Controller.extend({
     
     actions: {
         addCard() {
-            console.log(this.getProperties('name2').name2);
-            let newProject = {
+            if(this.getProperties('name2').name2){
+                let newProject = {
                     projectName: this.getProperties('name2').name2
-            }
-            this.newCard.pushObject(newProject);
-            
+                }
+                this.newCard.pushObject(newProject);
+            }            
+        },
+        deleteCard(topping) {
+            this.newCard.removeObject(topping);
         }
     }
 });

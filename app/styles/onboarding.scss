@@ -38,6 +38,7 @@
 }
 
 
+
     .container-create-team{
         h2{
         @media (min-width:320px) {
@@ -48,11 +49,20 @@
         }
         @media (min-width:720px){
             font-size: 1.25rem;
+            
         }
         @media (min-width:960px){
             font-size: 1.5rem;
         }
     }
+}
+
+.container-team-name {
+    .layout-column {
+        height: 84vh;
+        justify-content: space-between;
+    }
+   
 }
 
 // @media (min-width:640px) {
