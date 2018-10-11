@@ -7,10 +7,10 @@ export default Controller.extend({
             let user = this.getProperties('username');
             localStorage.setItem("username","Ruchik");
             if(user.username === localStorage.getItem("username")){
-                this.transitionToRoute('activity');
+                this.transitionToRoute('activity.myactivity');
             }
             else{
-                this.transitionToRoute('create-team');
+                this.transitionToRoute('multiform.create-team');
             }
         }
     }
