@@ -31,6 +31,7 @@ Router.map(function() {
     this.route('invite-members');
     this.route('integrations');
   });
+  this.route('project-view');
 });
 
 export default Router;

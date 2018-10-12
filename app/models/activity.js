@@ -11,14 +11,6 @@ export default DS.Model.extend({
   // createdAt: attr('date'),
   // status: attr('string'),
   // dueDate: attr('date'),
-  // task: attr('task',{
-  //     taskId: attr('string'),
-  //     text: attr('string'),
-  //     createdAt: attr('date'),
-  //     dueDate: attr('date'),
-  //     status: attr('string'),
-  //     assignTo: attr('string'),
-  //     archiveTask: attr('boolean')
-  // }),
+    task: attr(),
   archiveProject: attr('boolean')
 });
