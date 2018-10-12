@@ -1,9 +1,14 @@
 import DS from 'ember-data';
 import Em from 'ember';
 
+
 export default DS.RESTAdapter.extend({
-    buildURL(){
-        return `http://localhost:8000/api/v1/project`
+	//making a server call to trending
+	
+	
+	buildURL(modelName, id, snapshot, requestType, query){
+		
+		return `http://localhost:8000/api/v1/project`;
     },
     createRecord(store, type, snapshot) {
         let data = this.serialize(snapshot);
@@ -43,4 +48,5 @@ export default DS.RESTAdapter.extend({
             })
         })
     }
+   
 });
