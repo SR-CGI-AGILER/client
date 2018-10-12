@@ -1,5 +1,4 @@
 import DS from 'ember-data';
-<<<<<<< HEAD
 import Em from 'ember';
 
 export default DS.RESTAdapter.extend({
@@ -45,8 +44,3 @@ export default DS.RESTAdapter.extend({
         })
     }
 });
-=======
-
-export default DS.JSONAPIAdapter.extend({
-});
->>>>>>> c35f69aa0d9780e2aed7569d7a9c09e2cee03c8c
