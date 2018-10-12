@@ -1,6 +1,8 @@
 import Controller from '@ember/controller';
 
 export default Controller.extend({
+    queryParams : ["modelName"],
+  modelName: null, 
   newTask: [],
 
   actions: {
@@ -11,12 +13,12 @@ export default Controller.extend({
           projectName: this.getProperties('name2').name2
         }
         this.newTask.pushObject(newProject);
-        let createActivity = this.store.createRecord('activity', {
-            id: newProject.id,
-          projectName: newProject.projectName
+        // let createActivity = this.store.createRecord('activity', {
+        //     id: newProject.id,
+        //   projectName: newProject.projectName
 
-        })
-        createActivity.save();
+        // // })
+        // createActivity.save();
       }
     },
     deleteTask(topping) {

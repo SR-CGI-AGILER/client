@@ -1,8 +1,21 @@
 {{outlet}}
 <h2>Project Name</h2>
 <div class="layout-column">
-    {{#each model as |project|}}
-    {{/each}}
+    {{model.projectName}}
+    {{#paper-list}}
+  {{#each model.task as |x|}}
+    {{#paper-item class="md-3-line"}}
+      
+      <div class="md-list-item-text">
+        <h3>{{x.text}}</h3>
+        {{!-- {{x._id}} --}}
+        
+        {{!-- <p>........</p> --}}
+      </div>
+    {{/paper-item}}
+  {{/each}} 
+     {{/paper-list}}
+
     {{#each newTask as |topping|}}
         {{#paper-card as |card|}}
             <div class="layout-row layout-align-space-between-start">
