@@ -1,8 +1,8 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-    model(){
+    // model(){
       
-        return this.store.findAll('activity')
-    }
+    //     return this.store.findAll('activity')
+    // }
 });

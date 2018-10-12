@@ -1,24 +1,26 @@
 {{outlet}}
 
 <div class="container">
-{{#each model as |activity|}}
+{{#each data as |activity|}}
 	{{#paper-card as |card|}}
 
   
-    {{!-- {{#paper-list}} --}}
+   
  {{activity.projectName}}
  
-  {{!-- {{#each  as |item|}}
+  {{#paper-list}}
+  {{#each activity.task as |x|}}
     {{#paper-item class="md-3-line"}}
       
       <div class="md-list-item-text">
-        <h3>{{item.text}}</h3>
+        <h3>{{x.text}}</h3>
+        {{!-- {{x._id}} --}}
         
-        <p>Some longer notes here could be here. But they aren't.</p>
+        {{!-- <p>........</p> --}}
       </div>
     {{/paper-item}}
-  {{/each}} --}}
-     
+  {{/each}} 
+     {{/paper-list}}
     {{/paper-card}}
     
 {{/each}}

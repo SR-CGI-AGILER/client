@@ -14,7 +14,7 @@ export default DS.RESTSerializer.extend({
       e.id = e._id
       return e
     })
-    console.log(payload)
+    // console.log(payload)
  
     payload = {
      
