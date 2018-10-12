@@ -1,16 +1,6 @@
 import Controller from '@ember/controller';
 
 export default Controller.extend({
-<<<<<<< HEAD
-  newCard: [],
-
-  actions: {
-    addCard() {
-      if (this.getProperties('name2').name2) {
-        let newProject = {
-            id: Math.random(Math.floor(100000)),
-          projectName: this.getProperties('name2').name2
-=======
     newCard: [
             
         ],
@@ -26,7 +16,6 @@ export default Controller.extend({
         },
         deleteCard(topping) {
             this.newCard.removeObject(topping);
->>>>>>> c35f69aa0d9780e2aed7569d7a9c09e2cee03c8c
         }
         this.newCard.pushObject(newProject);
         let createActivity = this.store.createRecord('activity', {
