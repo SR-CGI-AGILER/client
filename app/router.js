@@ -26,6 +26,11 @@ Router.map(function() {
     this.route('team-name');
   });
   this.route('integration');
+  this.route('multiform', function() {
+    this.route('create-team');
+    this.route('invite-members');
+    this.route('integrations');
+  });
 });
 
 export default Router;
