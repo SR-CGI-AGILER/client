@@ -43,6 +43,7 @@
     "ember-load-initializers": "^1.1.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-paper": "^1.0.0-beta.18",
+    "ember-progress-bar": "^1.0.0",
     "ember-resolver": "^5.0.1",
     "ember-side-menu": "^0.1.0",
     "ember-source": "~3.4.0",
