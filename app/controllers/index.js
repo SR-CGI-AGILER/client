@@ -1,17 +1,22 @@
 import Controller from '@ember/controller';
+// import ENV from '../../config/environment';
+import Ember from 'ember';
+
+import { inject as service } from '@ember/service';
 
 export default Controller.extend({
-    
-    actions: {
-        login() {
-            let user = this.getProperties('username');
-            localStorage.setItem("username","Ruchik");
-            if(user.username === localStorage.getItem("username")){
-                this.transitionToRoute('activity.myactivity');
-            }
-            else{
-                this.transitionToRoute('create-team.team-name');
-            }
+    session : service('session'),
+    actions:{
+        authenticateSession(){
+
+            let session = this.get('session');
+            //console.log ( session.get("data"), "asdklasdlkdkjlsdflkjjsfjkdh")
+            session.authenticate('authenticator:torii', 'google-oauth2').then(()=>{
+                this.store.queryRecord('user', {}).then((user)=>{
+                    // console.log(user, "ththththththththt");  
+                    session.set('currentUser', user);
+                })
+            });
         }
     }
 });
