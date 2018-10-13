@@ -47,6 +47,7 @@
     "ember-resolver": "^5.0.1",
     "ember-side-menu": "^0.1.0",
     "ember-source": "~3.4.0",
+    "ember-websockets": "^7.2.0",
     "ember-welcome-page": "^3.2.0",
     "eslint-plugin-ember": "^5.2.0",
     "loader.js": "^4.7.0",
@@ -59,6 +60,7 @@
   "dependencies": {
     "ember-paper-expansion-panel": "0.0.4",
     "passport": "^0.4.0",
-    "passport-oauth": "^1.0.0"
+    "passport-oauth": "^1.0.0",
+    "socket.io": "^2.1.1"
   }
 }

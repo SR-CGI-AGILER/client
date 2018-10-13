@@ -20,8 +20,8 @@ export default Controller.extend({
       }
     },
     deleteCard(topping) {
-        console.log(topping)
-       let deleteActivity = this.store.findRecord('activity', topping.id).then(data => {
+        // console.log(topping)
+        this.store.findRecord('activity', topping.id).then(data => {
             data.set('archiveProject',"true")
             this.newCard.removeObject(topping);
         })
