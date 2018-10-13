@@ -1,7 +1,38 @@
 {{outlet}}
-{{!-- <h3 class=leftmargin>My Activity</h3> --}}
-{{!-- card for project movie-app --}}
-{{!-- {{#paper-card as |card|}} --}}
+
+<div class="container">
+{{#each data as |activity|}}
+	{{#paper-card as |card| }}
+
+  
+   
+ {{#paper-subheader}}<h2 {{action "transitionToProjectView" activity}}>{{activity.projectName}}</h2>{{/paper-subheader}}
+ 
+ 
+  {{#paper-list}}
+  {{#each activity.task as |x|}}
+    {{#paper-item class="md-3-line"}}
+      
+      <div class="md-list-item-text">
+       {{x.text}}
+       {{paper-divider}}
+        {{!-- {{x._id}} --}}
+        
+        {{!-- <p>........</p> --}}
+      </div>
+    {{/paper-item}}
+  {{/each}} 
+     {{/paper-list}}
+    {{/paper-card}}
+    
+{{/each}}
+
+</div>
+
+
+
+
+{{!-- 
 <span class="span-items">
   {{#paper-subheader}}
 
@@ -131,12 +162,8 @@
       {{/paper-menu}}
     </div>
   {{/paper-item}}
-{{!-- {{/paper-card}} --}}
 
 
-{{!-- second card for project 2 --}}
-
-{{!-- {{#paper-card as |card|}} --}}
   {{#paper-subheader}}
     <span class="span-items">
       Project 2 : Super-app  
@@ -264,5 +291,4 @@
     </div>
   {{/paper-item}}
 
-
-{{!-- {{/paper-card}} --}}
+ --}}

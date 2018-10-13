@@ -1,0 +1,54 @@
+{{outlet}}
+<h3>Project View</h3>
+<div class="layout-column">
+    {{#paper-subheader}}<h3>{{model.projectName}}</h3>{{/paper-subheader}}
+    {{paper-divider}}
+    {{#paper-list}}
+  {{#each model.task as |x|}}
+    {{#paper-item as |controls|}}
+     {{controls.checkbox value=x.enabled secondary=true onChange=(action (mut x.enabled))}}
+     
+      <div class="md-list-item-text">
+        {{x.text}}
+         {{#paper-button iconButton=true onClick=(action "deleteTask" topping)}} 
+        {{paper-icon "delete"}}
+        {{/paper-button}}
+        {{paper-divider}}
+        {{!-- {{x._id}} --}}
+        
+        {{!-- <p>........</p> --}}
+      </div>
+    {{/paper-item}}
+  {{/each}} 
+     {{/paper-list}}
+
+    {{#each newTask as |topping|}}
+        {{!-- {{#paper-card as |card|}} --}}
+            <div class="layout-row layout-align-space-between-start">
+            {{#paper-list}}
+                
+                    {{#paper-item as |controls|}}
+    {{#paper-checkbox value=value2 onChange=(action (mut value2))}}
+    {{/paper-checkbox}}
+                            {{toppiing.text}}
+                            {{#card.actions}}
+                            {{#paper-button iconButton=true onClick=(action "deleteTask" topping)}}
+                                
+                                {{paper-icon "delete"}}
+                            {{/paper-button}}
+                            {{/card.actions}}
+                        
+                    {{/paper-item}}
+                
+            {{/paper-list}}
+            </div>
+        {{!-- {{/paper-card}} --}}
+    {{/each}}
+</div>
+<div class="layout-row layout-align-center-end">
+    {{paper-input label="Add Task" type="text" value=name2 block=true 
+    onChange=(action (mut name2))}}
+    {{#paper-button iconButton="true" onClick=(action "addTask" model)}}
+        {{paper-icon "add"}}
+    {{/paper-button}}
+</div>
