@@ -39,7 +39,7 @@ export default DS.RESTAdapter.extend({
                 type: 'PUT',
                 contentType: 'application/json',
                 data: JSON.stringify(data),
-                url: `http://localhost:8000/api/v1/project/:projectName`,
+                url: `http://localhost:8000/api/v1/project/tasks`,
                 success: {
                     200: ()=>{
                         Em.run(null, resolve);
