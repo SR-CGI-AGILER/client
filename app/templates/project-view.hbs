@@ -1,13 +1,19 @@
 {{outlet}}
-<h2>Project Name</h2>
+<h3>Project View</h3>
 <div class="layout-column">
-    {{model.projectName}}
+    {{#paper-subheader}}<h3>{{model.projectName}}</h3>{{/paper-subheader}}
+    {{paper-divider}}
     {{#paper-list}}
   {{#each model.task as |x|}}
-    {{#paper-item class="md-3-line"}}
-      
+    {{#paper-item as |controls|}}
+     {{controls.checkbox value=x.enabled secondary=true onChange=(action (mut x.enabled))}}
+     
       <div class="md-list-item-text">
-        <h3>{{x.text}}</h3>
+        {{x.text}}
+         {{#paper-button iconButton=true onClick=(action "deleteTask" topping)}} 
+        {{paper-icon "delete"}}
+        {{/paper-button}}
+        {{paper-divider}}
         {{!-- {{x._id}} --}}
         
         {{!-- <p>........</p> --}}
@@ -17,12 +23,12 @@
      {{/paper-list}}
 
     {{#each newTask as |topping|}}
-        {{#paper-card as |card|}}
+        {{!-- {{#paper-card as |card|}} --}}
             <div class="layout-row layout-align-space-between-start">
             {{#paper-list}}
                 
                     {{#paper-item as |controls|}}
-    {{#paper-checkbox value=value1 onChange=(action (mut value1))}}
+    {{#paper-checkbox value=value2 onChange=(action (mut value2))}}
     {{/paper-checkbox}}
                             {{toppiing.text}}
                             {{#card.actions}}
@@ -36,7 +42,7 @@
                 
             {{/paper-list}}
             </div>
-        {{/paper-card}}
+        {{!-- {{/paper-card}} --}}
     {{/each}}
 </div>
 <div class="layout-row layout-align-center-end">

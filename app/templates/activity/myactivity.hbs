@@ -6,7 +6,7 @@
 
   
    
- <p {{action "transitionToProjectView" activity}}>{{activity.projectName}}</p>
+ {{#paper-subheader}}<h2 {{action "transitionToProjectView" activity}}>{{activity.projectName}}</h2>{{/paper-subheader}}
  
  
   {{#paper-list}}
@@ -14,7 +14,8 @@
     {{#paper-item class="md-3-line"}}
       
       <div class="md-list-item-text">
-        <h3>{{x.text}}</h3>
+       {{x.text}}
+       {{paper-divider}}
         {{!-- {{x._id}} --}}
         
         {{!-- <p>........</p> --}}

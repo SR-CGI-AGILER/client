@@ -69,11 +69,11 @@ export default Controller.extend({
     },
     deleteTask(topping) {
        
-        // this.store.findRecord('activity', topping.id).then(data => {
-            // data.set('archiveProject',"true")
+        this.store.findRecord('activity', topping.id).then(data => {
+            data.set('archiveProject',"true")
             this.newTask.removeObject(topping);
         
-        // })
+        })
     }
   }
 });
