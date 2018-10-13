@@ -15,7 +15,7 @@ export default Component.extend({
 		io.on('close', (event)=>{
 			console.log('closed');
         }, this);
-        this.set('message', [""])
+        this.set('message', [])
 	},
 		message: '',
 		myerrorHandler(event){
