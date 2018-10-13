@@ -2,9 +2,11 @@
 
 
 <div class="options-block">
-    {{#link-to "discuss"}}
-        {{#paper-button raised=true primary=true id="joinbutton"}}START DISCUSSION{{/paper-button}}
-    {{/link-to}}
+
+    {{!-- {{#link-to "discuss"}} --}}
+    {{#paper-button raised=true primary=true id="joinbutton"
+    onClick=(action "joinButtonPressed")}}START DISCUSSION{{/paper-button}}
+    {{!-- {{/link-to}} --}}
     {{!-- {{#link-to "start-discussion"}} --}}
     {{#paper-button raised=true warn=true}}MARK AS COMPLETE{{/paper-button}}
     {{!-- {{/link-to}} --}}
@@ -12,4 +14,3 @@
     {{#paper-button raised=true accent=true}}CANCEL TASK{{/paper-button}}
     {{!-- {{/link-to}} --}}
 </div>
-            
