@@ -5,15 +5,9 @@ import { inject as service } from '@ember/service';
 import { isPresent } from '@ember/utils'
 
 export default DS.RESTAdapter.extend(DataAdapterMixin, {
-    // session: service(),
-    // authorize(xhr){
-    //     let {access_token} = this.get('sesssion').get('session.data.authenticated');
-        
-    //     if(isPresent(access_token)){
-    //         xhr.setRequestHeader('Authorization', `Bearer ${access_token}`)
-    //     };
-    // },
+    
     authorizer: 'authorizer:google',
     host: 'https://www.googleapis.com',
+    session: Ember.inject.service('session')
     
 });

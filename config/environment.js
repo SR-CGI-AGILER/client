@@ -28,7 +28,7 @@ module.exports = function(environment) {
       sessionServiceName: 'session',
       providers: {
         'google-oauth2':{
-          apiKey: '821475427865-kc2oo79efhfcbgb3dc93d38ald7pn0ne.apps.googleusercontent.com',
+          apiKey: '264135382207-353mvbaf3r1084pspp2mshg7qv56m00i.apps.googleusercontent.com',
           redirectUri: 'http://localhost:4200/torii/redirect.html',
           scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile'
         }  
