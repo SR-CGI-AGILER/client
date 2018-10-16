@@ -15,7 +15,7 @@ export default Component.extend({
 		io.on('close', (event)=>{
 			console.log('closed');
         }, this);
-        this.set('message', [""])
+        this.set('message', [])
 	},
 		message: '',
 		myerrorHandler(event){
@@ -39,6 +39,7 @@ export default Component.extend({
 			sendButtonPressed() {
 				// console.log(this.get('var'))
 				let message = this.get('var')
+				this.set('var',"");
 				this.get('io').send(message);
 			}
 		}
