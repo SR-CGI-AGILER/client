@@ -1,224 +1,29 @@
 {{outlet}}
-<h3 class=leftmargin>My Activity</h3>
-{{#paper-card as |card|}}
 
-  {{#paper-subheader}}
+<div class="container">
+{{#each data as |activity|}}
+	{{#paper-card as |card| }}
 
-  <span class="flex"></span>
-  Project 1 : Movie-app
-      Due in : 3 day
-     {{!-- <div class="md-secondary-container"> --}}
-       {{#paper-menu as |menu|}}
-  {{#menu.trigger}}
-    {{#paper-button iconButton=true}}
-      {{paper-icon "more_vert"}}
-    {{/paper-button}}
-  {{/menu.trigger}}
-  {{#menu.content width=4 as |content|}}
-    {{#each items as |item|}}
-      {{#content.menu-item onClick="openSomething"}}
-        {{paper-icon item.icon}}
-        <span>{{item.title}}</span>
-      {{/content.menu-item}}
-    {{/each}}
-{{#content.menu-item onClick="openSomething" }}
-      {{paper-icon "message"}}
-      <span>Open Discussion .</span>
-    {{/content.menu-item}}
-    {{#content.menu-item onClick="openSomething" }}
-      {{paper-icon "delete"}}
-      <span>Delete Task</span>
-    {{/content.menu-item}}
-
-    {{paper-divider}}
-
-    {{#each items as |item|}}
-      {{#content.menu-item onClick="openSomething"}}
-        {{paper-icon item.icon}} {{item.title}}
-      {{/content.menu-item}}
-    {{/each}}
-  {{/menu.content}}
-{{/paper-menu}}
-      {{!-- </div> --}}
-  {{/paper-subheader}}
+  
+   
+ <p {{action "transitionToProjectView" activity}}>{{activity.projectName}}</p>
  
  
-    {{#paper-item}}
-      {{#paper-checkbox value=value1 onChange=(action (mut value1))}}
-    {{/paper-checkbox}}
-      <p>Create routes <strong>@swarnim</strong> </p>
-     <span>  Due : <strong>Today</strong></span>
-      <div class="md-secondary-container">
-       {{#paper-menu as |menu|}}
-  {{#menu.trigger}}
-    {{#paper-button iconButton=true}}
-      {{paper-icon "more_vert"}}
-    {{/paper-button}}
-  {{/menu.trigger}}
-  {{#menu.content width=4 as |content|}}
-    {{#each items as |item|}}
-      {{#content.menu-item onClick="openSomething"}}
-        {{paper-icon item.icon}}
-        <span>{{item.title}}</span>
-      {{/content.menu-item}}
-    {{/each}}
-{{#content.menu-item onClick="openSomething" }}
-      {{paper-icon "message"}}
-      <span>Open Discussion .</span>
-    {{/content.menu-item}}
-    {{#content.menu-item onClick="openSomething" }}
-      {{paper-icon "delete"}}
-      <span>Delete Task</span>
-    {{/content.menu-item}}
-
-    {{paper-divider}}
-
-    {{#each items as |item|}}
-      {{#content.menu-item onClick="openSomething"}}
-        {{paper-icon item.icon}} {{item.title}}
-      {{/content.menu-item}}
-    {{/each}}
-  {{/menu.content}}
-{{/paper-menu}}
+  {{#paper-list}}
+  {{#each activity.task as |x|}}
+    {{#paper-item class="md-3-line"}}
+      
+      <div class="md-list-item-text">
+        <h3>{{x.text}}</h3>
+        {{!-- {{x._id}} --}}
+        
+        {{!-- <p>........</p> --}}
       </div>
     {{/paper-item}}
+  {{/each}} 
+     {{/paper-list}}
+    {{/paper-card}}
+    
+{{/each}}
 
-
-
-
-
-    {{#paper-item}}
-      {{#paper-checkbox value=value2 onChange=(action (mut value2))}}
-  {{/paper-checkbox}}
-     <p>Install Ember Paper</p>
-       <div class="md-secondary-container">
-       {{#paper-menu as |menu|}}
-  {{#menu.trigger}}
-    {{#paper-button iconButton=true}}
-      {{paper-icon "more_vert"}}
-    {{/paper-button}}
-  {{/menu.trigger}}
-  {{#menu.content width=4 as |content|}}
-    {{#each items as |item|}}
-      {{#content.menu-item onClick="openSomething"}}
-        {{paper-icon item.icon}}
-        <span>{{item.title}}</span>
-      {{/content.menu-item}}
-    {{/each}}
-{{#content.menu-item onClick="openSomething" }}
-      {{paper-icon "message"}}
-      <span>Open Discussion .</span>
-    {{/content.menu-item}}
-    {{#content.menu-item onClick="openSomething" }}
-      {{paper-icon "delete"}}
-      <span>Delete Task</span>
-    {{/content.menu-item}}
-
-    {{paper-divider}}
-
-    {{#each items as |item|}}
-      {{#content.menu-item onClick="openSomething"}}
-        {{paper-icon item.icon}} {{item.title}}
-      {{/content.menu-item}}
-    {{/each}}
-  {{/menu.content}}
-{{/paper-menu}}
 </div>
-    {{/paper-item}}
-{{/paper-card}}
-
-
-
-
-
-
-{{#paper-card as |card|}}
-  {{#paper-subheader}}Project 2 : Super-app{{/paper-subheader}}
- 
-    {{#paper-item disabled=true}}
-      {{#paper-checkbox value=true onChange=(action (mut value3)) disabled=true}}
-    Checkbox (disabled)
-  {{/paper-checkbox}}
-      <p>Create routes <strong>@ankit</strong> </p>
-     <span>  Due : <strong>complete</strong></span>
-      <div class="md-secondary-container">
-       {{#paper-menu as |menu|}}
-  {{#menu.trigger}}
-    {{#paper-button iconButton=true}}
-      {{paper-icon "more_vert"}}
-    {{/paper-button}}
-  {{/menu.trigger}}
-  {{#menu.content width=4 as |content|}}
-    {{#each items as |item|}}
-      {{#content.menu-item onClick="openSomething"}}
-        {{paper-icon item.icon}}
-        <span>{{item.title}}</span>
-      {{/content.menu-item}}
-    {{/each}}
-{{#content.menu-item onClick="openSomething" }}
-      {{paper-icon "message"}}
-      <span>Open Discussion .</span>
-    {{/content.menu-item}}
-    {{#content.menu-item onClick="openSomething" }}
-      {{paper-icon "delete"}}
-      <span>Delete Task</span>
-    {{/content.menu-item}}
-
-    {{paper-divider}}
-
-    {{#each items as |item|}}
-      {{#content.menu-item onClick="openSomething"}}
-        {{paper-icon item.icon}} {{item.title}}
-      {{/content.menu-item}}
-    {{/each}}
-  {{/menu.content}}
-{{/paper-menu}}
-      </div>
-    {{/paper-item}}
-
-
-
-
-
-    {{#paper-item}}
-      {{#paper-checkbox value=value4 onChange=(action (mut value4))}}
-  {{/paper-checkbox}}
-     <p>Install Ember Paper  <strong>@ankit</strong></p>
-     <span>  Due : <strong>yesterday</strong></span>
-       <div class="md-secondary-container">
-       {{#paper-menu as |menu|}}
-  {{#menu.trigger}}
-    {{#paper-button iconButton=true}}
-      {{paper-icon "more_vert"}}
-    {{/paper-button}}
-  {{/menu.trigger}}
-  {{#menu.content width=4 as |content|}}
-    {{#each items as |item|}}
-      {{#content.menu-item onClick="openSomething"}}
-        {{paper-icon item.icon}}
-        <span>{{item.title}}</span>
-      {{/content.menu-item}}
-    {{/each}}
-{{#content.menu-item onClick="openSomething" }}
-      {{paper-icon "message"}}
-      <span>Open Discussion .</span>
-    {{/content.menu-item}}
-    {{#content.menu-item onClick="openSomething" }}
-      {{paper-icon "delete"}}
-      <span>Delete Task</span>
-    {{/content.menu-item}}
-
-    {{paper-divider}}
-
-    {{#each items as |item|}}
-      {{#content.menu-item onClick="openSomething"}}
-        {{paper-icon item.icon}} {{item.title}}
-      {{/content.menu-item}}
-    {{/each}}
-  {{/menu.content}}
-{{/paper-menu}}
-</div>
-    {{/paper-item}}
-
-
-{{/paper-card}}
