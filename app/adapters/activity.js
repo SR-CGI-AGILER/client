@@ -8,7 +8,7 @@ export default DS.RESTAdapter.extend({
 	
 	buildURL(modelName, id, snapshot, requestType, query){
 		
-		return `http://localhost:8000/api/v1/project`;
+		return `http://localhost:4040/api/v1/project`;
     },
     createRecord(store, type, snapshot) {
         let data = this.serialize(snapshot);
@@ -20,7 +20,7 @@ export default DS.RESTAdapter.extend({
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify(data),
-                url: `http://localhost:8000/api/v1/project`,
+                url: `http://localhost:4040/api/v1/project`,
                 success: {
                     200: ()=>{
                         Em.run(null, resolve);
@@ -41,7 +41,7 @@ export default DS.RESTAdapter.extend({
                 type: 'PUT',
                 contentType: 'application/json',
                 data: JSON.stringify(data.task[data.task.length -1]),
-                url: `http://localhost:8000/api/v1/project/${snapshot.id}/tasks`,
+                url: `http://localhost:4040/api/v1/project/${snapshot.id}/tasks`,
                 success: {
                     200: ()=>{
                         Em.run(null, resolve);
