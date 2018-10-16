@@ -1,4 +1,7 @@
 import Controller from '@ember/controller';
+import Ember from "ember";
+
+// import { io } from "../components/discuss-chat.js";
 
 export default Controller.extend({
     actions: {
@@ -12,4 +15,4 @@ export default Controller.extend({
         }
         
     }
-});
+  });
